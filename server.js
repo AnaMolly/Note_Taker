@@ -22,6 +22,28 @@ app.get('/api/notes', (req, res) => {
     })
 })
 
+app.post('/api/notes', (req, res) => {
+    const newEntry = req.body
 
+    fs.readFile("./db/db.json", (err, data) => {
+        if (err) throw err;
+        
+        entries = (JSON.parse(data))
+        entries.push(newEntry)
+        
+
+        fs.writeFile(path.join(__dirname, '/db/db.json'), JSON.stringify(entries), function (err) {
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("Note has been saved!")
+            }
+    
+        })
+    
+        res.json(entries)
+    })  
+
+});
 
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
