@@ -30,7 +30,7 @@ app.post('/api/notes', (req, res) => {
     fs.readFile("./db/db.json", (err, data) => {
         if (err) throw err;
         
-        entries = JSON.parse(data)
+       let entries = JSON.parse(data)
         entries.push(newEntry)
         
 
