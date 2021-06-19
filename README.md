@@ -22,6 +22,7 @@
   # Usage
   To use the application, run 'node server.js' in the terminal OR click on the deployed link above.
   ![](/assets/Screenshot.png)
+  
   # Tests
   Refer to the Installation and Usage sections above.
 
