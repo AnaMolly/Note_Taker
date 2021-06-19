@@ -5,7 +5,7 @@
   ## Description
   This is a JavaScript application that can be used for taking notes. The user is able to create, save and delete notes. Technologies used in the making of this application includes HTML, CSS, Node.js and Express.js.
   
-  ## Deployed application: 
+  # Deployed application: 
   https://shrouded-mountain-13281.herokuapp.com/notes
 
   # Table of Contents
@@ -21,7 +21,7 @@
 
   # Usage
   To use the application, run 'node server.js' in the terminal OR click on the deployed link above.
-  ![](/assets/Screenshot.png)
+  ![](/Assets/Screenshot.png)
   
   # Tests
   Refer to the Installation and Usage sections above.
